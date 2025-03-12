@@ -1,0 +1,15 @@
+/Users/milanm/RiderProjects/Heroes_And_Dragons_RPG_Game/HeroesAndDragons/bin/Debug/net8.0/HeroesAndDragons
+/Users/milanm/RiderProjects/Heroes_And_Dragons_RPG_Game/HeroesAndDragons/bin/Debug/net8.0/HeroesAndDragons.deps.json
+/Users/milanm/RiderProjects/Heroes_And_Dragons_RPG_Game/HeroesAndDragons/bin/Debug/net8.0/HeroesAndDragons.runtimeconfig.json
+/Users/milanm/RiderProjects/Heroes_And_Dragons_RPG_Game/HeroesAndDragons/bin/Debug/net8.0/HeroesAndDragons.dll
+/Users/milanm/RiderProjects/Heroes_And_Dragons_RPG_Game/HeroesAndDragons/bin/Debug/net8.0/HeroesAndDragons.pdb
+/Users/milanm/RiderProjects/Heroes_And_Dragons_RPG_Game/HeroesAndDragons/obj/Debug/net8.0/HeroesAndDragons.GeneratedMSBuildEditorConfig.editorconfig
+/Users/milanm/RiderProjects/Heroes_And_Dragons_RPG_Game/HeroesAndDragons/obj/Debug/net8.0/HeroesAndDragons.AssemblyInfoInputs.cache
+/Users/milanm/RiderProjects/Heroes_And_Dragons_RPG_Game/HeroesAndDragons/obj/Debug/net8.0/HeroesAndDragons.AssemblyInfo.cs
+/Users/milanm/RiderProjects/Heroes_And_Dragons_RPG_Game/HeroesAndDragons/obj/Debug/net8.0/HeroesAndDragons.csproj.CoreCompileInputs.cache
+/Users/milanm/RiderProjects/Heroes_And_Dragons_RPG_Game/HeroesAndDragons/obj/Debug/net8.0/HeroesAndDragons.sourcelink.json
+/Users/milanm/RiderProjects/Heroes_And_Dragons_RPG_Game/HeroesAndDragons/obj/Debug/net8.0/HeroesAndDragons.dll
+/Users/milanm/RiderProjects/Heroes_And_Dragons_RPG_Game/HeroesAndDragons/obj/Debug/net8.0/refint/HeroesAndDragons.dll
+/Users/milanm/RiderProjects/Heroes_And_Dragons_RPG_Game/HeroesAndDragons/obj/Debug/net8.0/HeroesAndDragons.pdb
+/Users/milanm/RiderProjects/Heroes_And_Dragons_RPG_Game/HeroesAndDragons/obj/Debug/net8.0/HeroesAndDragons.genruntimeconfig.cache
+/Users/milanm/RiderProjects/Heroes_And_Dragons_RPG_Game/HeroesAndDragons/obj/Debug/net8.0/ref/HeroesAndDragons.dll
