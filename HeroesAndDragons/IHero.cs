@@ -7,5 +7,5 @@ public interface IHero
     int AttackPoints (int command);
     bool IsDead();
     void DamageReceived (int damage);
-    void SetHealthPoints(int healthPoints);
+    bool SetHealthPoints(string healthPoints);
 }

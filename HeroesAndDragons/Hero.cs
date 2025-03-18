@@ -95,13 +95,25 @@ public class Hero : IHero
     {
         HealthPoints -= damage;
     }
-    public void SetHealthPoints(int healthPoints)
+    public bool SetHealthPoints(string healthPoints)
     {
-        if (healthPoints < 1 || healthPoints > 100)
+        //mozda napraviti da metoda vraca bool i u njoj sve proveriti : da li je unet broj ili string i da li je broj u granicama. 
+        if (int.TryParse(healthPoints, out int hp))
         {
-            throw new ArgumentException("Health points cannot be less or equal to 0 or more than 100.");
+            if (hp < 1 || hp > 100)
+            {
+                Console.WriteLine("Health points cannot be less or equal to 0 or more than 100.");
+                return false;
+            }
+            this.healthPoints = hp;
+            Console.WriteLine($"Health points for Hero set to {this.healthPoints}hp." );
+            return true;
         }
-        this.healthPoints = healthPoints;
+        else
+        {
+            Console.WriteLine("Health points needs to be a NUMBER between 1 and 100.");
+            return false;
+        }
     }
 
     public bool IsDead()
