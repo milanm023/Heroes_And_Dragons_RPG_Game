@@ -4,6 +4,9 @@ class StartUp
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
+        Hero hero = Hero.Instance;
+        Dragon dragon = Dragon.Instance;
+        
+        Console.WriteLine($"Hello, World! {dragon.ToString()}");
     }
 }

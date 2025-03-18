@@ -5,5 +5,7 @@ public interface IHero
     int Healing { get; }
     int HealthPoints { get; }
     int AttackPoints (int command);
-    void Damage (int damage);
+    bool IsDead();
+    void DamageReceived (int damage);
+    void SetHealthPoints(int healthPoints);
 }

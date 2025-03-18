@@ -4,5 +4,7 @@ public interface IDragon
 {
     int HealthPoints { get; }
     int AttackPoints ();
-    void Damage (int damage);
+    bool IsDead();
+    void DamageReceived (int damage);
+    void SetHealthPoints (int healthPoints);
 }

@@ -5,11 +5,28 @@ public class Hero : IHero
     private int healthPoints;
     private int healing;
     
+    //Singleton
+    private static Hero instance;
+    private Hero()
+    { }
+
+    public static Hero Instance
+    {
+        get
+        {
+            if (instance == null)
+                instance = new Hero();
+            return instance;
+        }
+    }
+
+    /*
     public Hero(int healthPoints)
     {
         this.HealthPoints = healthPoints;
         this.Healing = 2;
     }
+    */
 
     public int Healing
     {
@@ -74,8 +91,21 @@ public class Hero : IHero
         return attackPoints;
     }
 
-    public void Damage(int damage)
+    public void DamageReceived(int damage)
     {
         HealthPoints -= damage;
+    }
+    public void SetHealthPoints(int healthPoints)
+    {
+        if (healthPoints < 1 || healthPoints > 100)
+        {
+            throw new ArgumentException("Health points cannot be less or equal to 0 or more than 100.");
+        }
+        this.healthPoints = healthPoints;
+    }
+
+    public bool IsDead()
+    {
+        return healthPoints <= 0;
     }
 }
