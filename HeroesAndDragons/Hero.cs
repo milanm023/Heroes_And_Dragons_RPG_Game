@@ -3,7 +3,7 @@ namespace HeroesAndDragons;
 public class Hero : IHero
 {
     private int healthPoints;
-    private int healing;
+    private int healing = 2;
     
     //Singleton
     private static Hero instance;
@@ -93,7 +93,8 @@ public class Hero : IHero
 
     public void DamageReceived(int damage)
     {
-        HealthPoints -= damage;
+        Console.WriteLine($"Hero lost {damage} hp!");
+        healthPoints -= damage;
     }
     public bool SetHealthPoints(string healthPoints)
     {
@@ -115,9 +116,34 @@ public class Hero : IHero
             return false;
         }
     }
-
     public bool IsDead()
     {
         return healthPoints <= 0;
+    }
+
+    public void UseHealingPotion()
+    {
+        if (Healing == 0)
+        {
+            Console.WriteLine("No more healing potions left.");
+            Console.WriteLine($"Hero's health: {HealthPoints}");
+        }
+        else
+        {
+            Random random = new Random();
+            int healingPoints = random.Next(15, 36);
+            Console.WriteLine($"Health restored: {healingPoints}");
+            if (healingPoints + healthPoints > 100)
+            {
+                healthPoints = 100;
+            }
+            else
+            {
+                healthPoints += healingPoints;
+            }
+            Healing--;
+            Console.WriteLine($"Healing potions left: {Healing}");
+            Console.WriteLine($"Hero's health: {HealthPoints}");
+        }
     }
 }

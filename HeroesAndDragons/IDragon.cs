@@ -6,5 +6,5 @@ public interface IDragon
     int AttackPoints ();
     bool IsDead();
     void DamageReceived (int damage);
-    void SetHealthPoints (int healthPoints);
+    bool SetHealthPoints (string healthPoints);
 }

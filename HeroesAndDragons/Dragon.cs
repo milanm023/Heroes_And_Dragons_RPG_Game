@@ -50,20 +50,40 @@ public class Dragon : IDragon
 
     public void DamageReceived(int damage)
     {
-        HealthPoints -= damage;
+        if (damage == 0)
+        {
+            Console.WriteLine("Missed!!!");
+        }
+        else
+        {
+            Console.WriteLine($"Dragon lost {damage} hp!");
+            healthPoints -= damage;
+        }
+        
     }
 
-    public void SetHealthPoints(int healthPoints)
+    public bool SetHealthPoints(string healthPoints)
     {
-        if (healthPoints < 1 || healthPoints > 100)
+        if (int.TryParse(healthPoints, out int hp))
         {
-            throw new ArgumentException("Health points cannot be less or equal to 0 or more than 100.");
+            if (hp < 1 || hp > 100)
+            {
+                Console.WriteLine("Health points cannot be less or equal to 0 or more than 100.");
+                return false;
+            }
+            this.healthPoints = hp;
+            Console.WriteLine($"Health points for Dragon set to {this.healthPoints}hp." );
+            return true;
         }
-        this.healthPoints = healthPoints;
+        else
+        {
+            Console.WriteLine("Health points needs to be a NUMBER between 1 and 100.");
+            return false;
+        }
     }
 
     public bool IsDead()
     {
-        return healthPoints<=0;
+        return healthPoints <= 0;
     }
 }

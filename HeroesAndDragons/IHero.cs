@@ -8,4 +8,5 @@ public interface IHero
     bool IsDead();
     void DamageReceived (int damage);
     bool SetHealthPoints(string healthPoints);
+    void UseHealingPotion();
 }
